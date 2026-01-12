@@ -121,7 +121,7 @@ void sierpinski_div(picture* pic, int x, int y, int size, color color) {
 }
 
 void sierpinski_div_rainbow(picture* pic, int x, int y, int size, float hue) {
-    if (size < 25) {
+    if (size < 1) {
         // Convertir la teinte HSV en RGB
         color rainbowColor = hsv_to_rgb(hue, 1.0f, 1.0f);
         sierpinski(pic, x, y, size, rainbowColor);
